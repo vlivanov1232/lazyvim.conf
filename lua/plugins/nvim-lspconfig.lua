@@ -17,23 +17,37 @@ return {
     servers = {
       -- tsserver will be automatically installed with mason and loaded with lspconfig
       tsserver = {},
-
-      pylsp = {
-        settings = {
-          pylsp = {
-            plugins = {
-              isort = {
-                enabled = true,
-              },
-              rope_autoimport = {
-                enabled = true,
-                code_actions = { enabled = true },
-                completions = { enabled = true },
-              },
-            },
-          },
-        },
-      },
+      basedpyright = {},
+      ruff_lsp = {},
+      ruff = {},
+      -- pylsp = {
+      --   settings = {
+      --     pylsp = {
+      --       plugins = {
+      --         ruff = {
+      --           enabled = true,
+      --         },
+      --         pycodestyle = {
+      --           enabled = false,
+      --         },
+      --         pyflakes = {
+      --           enabled = false,
+      --         },
+      --         mccabe = {
+      --           enabled = false,
+      --         },
+      --         isort = {
+      --           enabled = true,
+      --         },
+      --         rope_autoimport = {
+      --           enabled = true,
+      --           code_actions = { enabled = true },
+      --           completions = { enabled = true },
+      --         },
+      --       },
+      --     },
+      --   },
+      -- },
     },
     -- you can do any additional lsp server setup here
     -- return true if you don't want this server to be setup with lspconfig
